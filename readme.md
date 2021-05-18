@@ -6,14 +6,14 @@ Intercom doesn't have any functionality to upload a .csv to backdate or manually
 * Node
 * Fetch (npm install fetch)
 
-You can run node scripts from the terminal by being in the correct directory and typing `node FILENAME.js`.
+You can run node scripts from the terminal by being in the correct directory and typing `node FILENAME.js`
 
 ## How it works:
 Your *Events* need to be in JSON format (the Intercom API only takes JSON objects). The easiest thing (I found) to do is to have all your events in a .csv file, then use an online file formatting tool (such as https://csvjson.com/csv2json) to get the required format.
 
-Copy & paste your JSON objects into the array `const postArrayOfEvents = [];`.
+Copy & paste your JSON objects into the array `const postArrayOfEvents = [];`
 
-You'll need to add in your Bearer Token which is specific to your own Intercom account in the Authorization header `'Authorization': 'Bearer <<TOKEN HERE>>'`. **Never share this token online.**
+You'll need to add in your Bearer Token which is specific to your own Intercom account in the Authorization header `'Authorization': 'Bearer <<TOKEN HERE>>'` **Never share this token online.**
 
 You should now be set to begin uploading Events to the Intercom API.
 
